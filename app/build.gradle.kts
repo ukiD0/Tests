@@ -60,10 +60,10 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("com.yarolegovich:sliding-root-nav:1.1.1")
     implementation ("com.guolindev.permissionx:permissionx:1.7.1")
+
     //barcode
     implementation("com.journeyapps:zxing-android-embedded:4.3.0")
-    //testing
-    androidTestImplementation ("com.androidx.support.test:rules:1.0.2")
+
     debugImplementation("androidx.fragment:fragment-testing:1.7.0")
     androidTestImplementation("androidx.test:runner:1.5.2")
     androidTestImplementation("androidx.test:rules:1.5.0")
@@ -71,11 +71,12 @@ dependencies {
     androidTestImplementation ("org.hamcrest:hamcrest-library:1.3")
     testImplementation ("org.mockito:mockito-core:3.11.2")
 
-    implementation(libs.core.ktx)
-    implementation(libs.appcompat)
-    implementation(libs.material)
-    implementation(libs.constraintlayout)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.test.ext.junit)
-    androidTestImplementation(libs.espresso.core)
+    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.12.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
