@@ -32,8 +32,7 @@ class EmailTest {
     val scenarioRule = launchFragmentInContainer<SignInFragment>()
     @Test
     fun validPassword() {
-        val pass = "12345!Ab"
-        onView(withId(R.id.passId)).perform(typeText(pass))
+        onView(withId(R.id.passId)).perform(typeText(AuthRepository.TEST_PASSWORD))
         onView(withId(R.id.passId)).check { view, noViewFoundException ->
             if (view is EditText){
                assert(AuthRepository.checkValidPass(view))
@@ -42,9 +41,8 @@ class EmailTest {
     }
     @Test
     fun invalidPasswordAlert() {
-        val pass = "12345"
         onView(withId(R.id.passId))
-            .perform(typeText(pass),closeSoftKeyboard())
+            .perform(typeText(AuthRepository.TEST_PASSWORD_INVALID),closeSoftKeyboard())
         onView(withId(R.id.passId)).check { view, noViewFoundException ->
             if (view is EditText){
                 assert(!AuthRepository.checkValidPass(view))
@@ -59,8 +57,7 @@ class EmailTest {
     }
     @Test
     fun validEmail() {
-        val pass = "valusa@123mewo.ry"
-        onView(withId(R.id.emailId)).perform(typeText(pass))
+        onView(withId(R.id.emailId)).perform(typeText(AuthRepository.TEST_EMAIL))
         onView(withId(R.id.emailId)).check { view, noViewFoundException ->
             if (view is EditText){
                 assert(AuthRepository.checkValidEmail(view))
@@ -69,8 +66,7 @@ class EmailTest {
     }
     @Test
     fun invalidEmailAlert() {
-        val pass = "valusDDDSa@12sSSD3mewo.ry"
-        onView(withId(R.id.emailId)).perform(typeText(pass))
+        onView(withId(R.id.emailId)).perform(typeText(AuthRepository.TEST_EMAIL_INVALID))
         onView(withId(R.id.emailId)).check { view, noViewFoundException ->
             if (view is EditText){
                 assert(!AuthRepository.checkValidEmail(view))
