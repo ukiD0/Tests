@@ -15,5 +15,7 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:statusBarColor">#48B2E7</item>
     </style>
-
+    <style name="setBackColor" parent="Widget.Design.FloatingActionButton">
+        <item name="tint">@color/white</item>
+    </style>
 </resources>

@@ -37,4 +37,24 @@
             app:popUpTo="@id/viewPagerFragment"
             app:popUpToInclusive="true" />
     </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.saransk.presentation.HomeFragment"
+        android:label="fragment_home_category_list"
+        tools:layout="@layout/fragment_home_category_list" />
+    <fragment
+        android:id="@+id/notificFragment"
+        android:name="com.example.saransk.NotificFragment"
+        android:label="fragment_notific"
+        tools:layout="@layout/fragment_notific" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.saransk.presentation.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.saransk.presentation.ProfileFragment"
+        android:label="fragment_profule"
+        tools:layout="@layout/fragment_profule" />
 </navigation>
