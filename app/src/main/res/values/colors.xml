@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue">#48B2E7</color>
+    <color name="lightGray">#F7F7F9</color>
+    <color name="textColorGrayLight">#707B81</color>
+    <color name="blackForApp">#2B2B2B</color>
+    <color name="red">#F87265</color>
 </resources>

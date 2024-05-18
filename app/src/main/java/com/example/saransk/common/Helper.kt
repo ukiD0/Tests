@@ -1,3 +1,8 @@
+/**
+ * This class created for object Helper
+ * Author Korovkina Valentina
+ * Create date 18/05/24
+ * */
 package com.example.saransk.common
 
 import android.app.AlertDialog

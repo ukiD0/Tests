@@ -1,4 +1,9 @@
-package com.example.saransk.presentation
+/**
+ * This class created for SignInFragment
+ * Author Korovkina Valentina
+ * Create date 18/05/24
+ * */
+package com.example.saransk.presentation.registration
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
